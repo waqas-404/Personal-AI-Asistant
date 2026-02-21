@@ -690,5 +690,17 @@
     {
         "role": "assistant",
         "content": "Goodbye sir."
+    },
+    {
+        "role": "user",
+        "content": "Generate image of tony stark"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure sir, I will let you know when the images are ready."
+    },
+    {
+        "role": "assistant",
+        "content": "Sir, the images are ready."
     }
 ]
