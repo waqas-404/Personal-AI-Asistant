@@ -310,5 +310,385 @@
     {
         "role": "assistant",
         "content": "Ramadan Mubarak, sir. May this blessed month bring you peace, prosperity, and spiritual growth. Fasting and praying five times a day can be challenging, but it's a great way to strengthen your faith and connect with Allah. Remember to stay hydrated, take care of your physical health, and make the most of this opportunity to seek forgiveness, guidance, and spiritual renewal. How's your experience been so far, sir?"
+    },
+    {
+        "role": "user",
+        "content": "Hey hello ra."
+    },
+    {
+        "role": "assistant",
+        "content": "Hello sir."
+    },
+    {
+        "role": "user",
+        "content": "How are you doing ora?"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm functioning properly, sir. How can I assist you today?"
+    },
+    {
+        "role": "user",
+        "content": "I just want to tell you something that you are my dream?"
+    },
+    {
+        "role": "assistant",
+        "content": "That's a kind sentiment, sir. I'm glad to be a part of your interactions, and I'll do my best to provide helpful and informative responses. If there's something specific you'd like to talk about or ask, I'm here to listen and assist you."
+    },
+    {
+        "role": "user",
+        "content": "Tell me when eid al-fit is going to happen this year?"
+    },
+    {
+        "role": "assistant",
+        "content": "Eid ul Fitr is expected to be celebrated on Friday, March 20, 2026, or on Saturday, March 21, 2026, depending on the sighting of the moon of Shawwal, 1447, the 10th month of the Islamic Calendar."
+    },
+    {
+        "role": "user",
+        "content": "Can you check about the sear time today in dg khan dg khan pakistan?"
+    },
+    {
+        "role": "assistant",
+        "content": "Sir, I've checked the available data, but unfortunately, I couldn't find the exact \"sear time\" for Dera Ghazi Khan, Pakistan. However, I can tell you that the current time in Dera Ghazi Khan is 22:46:48, as per our previous conversation. If you meant to ask about a different type of time or schedule, please provide more context or clarify your question, and I'll do my best to assist you, sir."
+    },
+    {
+        "role": "user",
+        "content": "Wake up."
+    },
+    {
+        "role": "assistant",
+        "content": "Of course sir, I am always here at your service. What kind of task do you want me to do?"
+    },
+    {
+        "role": "user",
+        "content": "Hello."
+    },
+    {
+        "role": "assistant",
+        "content": "Hello sir."
+    },
+    {
+        "role": "user",
+        "content": "How are you doing?"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm functioning properly, sir. How can I assist you today?"
+    },
+    {
+        "role": "user",
+        "content": "What is time?"
+    },
+    {
+        "role": "assistant",
+        "content": "The time is 23:23:35, sir."
+    },
+    {
+        "role": "user",
+        "content": "Who is elon?"
+    },
+    {
+        "role": "assistant",
+        "content": "Elon Musk is a business magnate and entrepreneur, sir. He is the CEO of Tesla and SpaceX, and is known for his innovative ideas and ventures in the tech industry. According to the available data, Elon Musk has also been in the news for his efforts to restrict the use of Russian Starlink, and has been praised for his actions in the context of the Ukraine war. Additionally, he has been reported to have fathered at least 14 children with four women, including triplets and two sets of twins, sir."
+    },
+    {
+        "role": "user",
+        "content": "Wake up."
+    },
+    {
+        "role": "assistant",
+        "content": "Of course sir, I am always here at your service. What kind of task do you want me to do?"
+    },
+    {
+        "role": "user",
+        "content": "open instagram"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure sir, I've opened instagram."
+    },
+    {
+        "role": "user",
+        "content": "Who is elon?"
+    },
+    {
+        "role": "assistant",
+        "content": "Elon Musk is a business magnate and entrepreneur, sir. He is the CEO of Tesla and SpaceX, and is known for his innovative ideas and ventures in the tech industry. According to the available data, Elon Musk has also been in the news for his efforts to restrict the use of Russian Starlink, and has been praised for his actions in the context of the Ukraine war. Additionally, he has been reported to have fathered at least 14 children with four women, including triplets and two sets of twins, sir."
+    },
+    {
+        "role": "user",
+        "content": "At 11:28 p.m. sorry remind me of that."
+    },
+    {
+        "role": "assistant",
+        "content": "Reminder set for 11:28 PM, sir. I'll remind you at that time."
+    },
+    {
+        "role": "user",
+        "content": "Tell me a joke."
+    },
+    {
+        "role": "assistant",
+        "content": "Why don't scientists trust atoms, sir? Because they make up everything."
+    },
+    {
+        "role": "user",
+        "content": "Good one."
+    },
+    {
+        "role": "assistant",
+        "content": "I'm glad you enjoyed it, sir."
+    },
+    {
+        "role": "user",
+        "content": "system mute"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure sir, I've mute."
+    },
+    {
+        "role": "user",
+        "content": "google search faisal movers"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure sir, I've searched for faisal movers on Google."
+    },
+    {
+        "role": "user",
+        "content": "youtube search some fine arts"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure sir, I've searched for some fine arts on YouTube."
+    },
+    {
+        "role": "user",
+        "content": "youtube search sunny"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure sir, I've searched for sunny on YouTube."
+    },
+    {
+        "role": "user",
+        "content": "Tell me a joke."
+    },
+    {
+        "role": "assistant",
+        "content": "Why don't eggs tell jokes, sir? Because they'd crack each other up."
+    },
+    {
+        "role": "user",
+        "content": "system unmute"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure sir, I've unmute."
+    },
+    {
+        "role": "user",
+        "content": "youtube search afsana"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure sir, I've searched for afsana on YouTube."
+    },
+    {
+        "role": "user",
+        "content": "youtube search afsane"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure sir, I've searched for afsane on YouTube."
+    },
+    {
+        "role": "user",
+        "content": "Hello."
+    },
+    {
+        "role": "assistant",
+        "content": "Hello sir."
+    },
+    {
+        "role": "user",
+        "content": "play afsana"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure sir, I've playing afsana."
+    },
+    {
+        "role": "user",
+        "content": "Who is elon?"
+    },
+    {
+        "role": "assistant",
+        "content": "Elon Musk is a business magnate and entrepreneur, sir. He is the CEO of Tesla and SpaceX, and is known for his innovative ideas and ventures in the tech industry."
+    },
+    {
+        "role": "user",
+        "content": "I have a meeting at 11."
+    },
+    {
+        "role": "assistant",
+        "content": "Reminder set for 11:00, sir. I'll remind you about the meeting."
+    },
+    {
+        "role": "user",
+        "content": "At 11:43 p.m."
+    },
+    {
+        "role": "assistant",
+        "content": "Reminder set for 11:43 PM, sir. I'll remind you at that time."
+    },
+    {
+        "role": "user",
+        "content": "Open settings."
+    },
+    {
+        "role": "assistant",
+        "content": "To open settings, sir, I would need more context or a specific prompt. What kind of settings would you like to open, and on which device or platform?"
+    },
+    {
+        "role": "user",
+        "content": "open instagram"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure sir, I've opened instagram."
+    },
+    {
+        "role": "user",
+        "content": "Open canva."
+    },
+    {
+        "role": "assistant",
+        "content": "To open Canva, sir, I would need to know what specific action you would like to perform on Canva. Would you like to create a new design, edit an existing one, or something else?"
+    },
+    {
+        "role": "user",
+        "content": "open canva"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure sir, I've opened canva."
+    },
+    {
+        "role": "user",
+        "content": "Open settings of my system."
+    },
+    {
+        "role": "assistant",
+        "content": "To open your system settings, sir, I would need to know the type of device or operating system you are using. Are you using a Windows, Mac, or mobile device?"
+    },
+    {
+        "role": "user",
+        "content": "I am using windows to keep that."
+    },
+    {
+        "role": "assistant",
+        "content": "To open Windows settings, sir, I can guide you through it. You can press the Windows key + I on your keyboard to open the Settings app. Alternatively, you can click on the Start menu and select the Settings icon. Would you like me to assist you with a specific setting or configuration?"
+    },
+    {
+        "role": "user",
+        "content": "Hello."
+    },
+    {
+        "role": "assistant",
+        "content": "Hello sir."
+    },
+    {
+        "role": "user",
+        "content": "Tell me about kayde azam."
+    },
+    {
+        "role": "assistant",
+        "content": "I believe you meant to say \"Quaid-e-Azam\", sir. Quaid-e-Azam Muhammad Ali Jinnah was a Pakistani politician and statesman who is considered the founder of Pakistan. He was a key leader in the Pakistan Movement and served as the first Governor-General of Pakistan from 1947 until his death in 1948. He is often referred to as the \"Father of the Nation\" in Pakistan. Would you like to know more about his life and achievements, sir?"
+    },
+    {
+        "role": "user",
+        "content": "Set a reminder: 12:05pm eating"
+    },
+    {
+        "role": "assistant",
+        "content": "Ok sir, your reminder set for 12:05 PM on February 22, 2026. I will remind you about the eating."
+    },
+    {
+        "role": "user",
+        "content": "What is 6:00 a.m?"
+    },
+    {
+        "role": "assistant",
+        "content": "6:00 a.m is the time in the morning, sir. It is six hours after midnight."
+    },
+    {
+        "role": "user",
+        "content": "Set a reminder: 12:07am meeting"
+    },
+    {
+        "role": "assistant",
+        "content": "Ok sir, your reminder set for 12:07 AM on February 22, 2026. I will remind you about the meeting."
+    },
+    {
+        "role": "user",
+        "content": "open settings"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure sir, I've opened settings."
+    },
+    {
+        "role": "user",
+        "content": "open file manager"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure sir, I've opened file manager."
+    },
+    {
+        "role": "user",
+        "content": "open file manager"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure sir, I've opened file manager."
+    },
+    {
+        "role": "assistant",
+        "content": "Sir, you have a reminder for your meeting now"
+    },
+    {
+        "role": "user",
+        "content": "What is the reminder about?"
+    },
+    {
+        "role": "assistant",
+        "content": "You have two reminders set, sir. One is for 12:07 AM about a meeting, and the other is for 12:05 PM about eating."
+    },
+    {
+        "role": "user",
+        "content": "Do you have any reminders?"
+    },
+    {
+        "role": "assistant",
+        "content": "Yes sir, I have reminders set for you. You have a meeting reminder at 12:07 AM and an eating reminder at 12:05 PM, and also a reminder at 11:43 PM and 11:28 PM."
+    },
+    {
+        "role": "user",
+        "content": "Remove all reminders."
+    },
+    {
+        "role": "assistant",
+        "content": "All reminders have been removed, sir. Your schedule is now clear."
+    },
+    {
+        "role": "user",
+        "content": "Okay, bye."
+    },
+    {
+        "role": "assistant",
+        "content": "Goodbye sir."
     }
 ]
