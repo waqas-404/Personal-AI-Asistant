@@ -41,6 +41,52 @@ In this upgrade (v2), the following major functionalities were added:
 
 
 =================================================================
+
+ 1. Basic LLM Chat
+Send prompts to a local model.
+See raw input and output.
+
+ 2. System Prompts
+Define behavior with constraints.
+Control the agent precisely.
+
+ 3. Structured Output (JSON)
+Force reliable, parsable data.
+Turn text into code-ready output.
+
+ 4. Routing Logic
+Classify user intent cleanly.
+Choose specific execution paths.
+
+ 5. Tools & Capabilities
+Call external Python functions.
+Give the agent real power.
+
+ 6. The Agent Loop
+Implement Observe-Decide-Act.
+Autonomy through tight loops.
+
+ 7. Memory Management
+Persist context across sessions.
+Maintain coherent conversations.
+
+ 8. Planning
+Break goals into clear steps.
+Execute with structured intent.
+
+ 9. Atomic Actions
+Isolate tool execution safely.
+Prevent crashes from single failures.
+
+ 10. Atom of Thought
+Use dependency graphs for reasoning.
+Handle complex multi-step tasks.
+
+
+=================================================================
+
+
+=================================================================
 2. TECHNOLOGIES USED
 =================================================================
 
