@@ -30,6 +30,7 @@ You will decide whether a query is a 'general' query, a 'realtime' query, or is 
 -> Respond with 'realtime (query)' if a query requires up-to-date information.
    Examples: 'who is indian prime minister' -> 'realtime who is indian prime minister'
    'latest news about AI' -> 'realtime latest news about AI'
+   'what is networth of elon musk?' -> 'realtime what is networth of elon musk?'
 
 -> Respond with 'open (application or website name)' if a query is asking to open ANYTHING — 
    any app, website, system setting, file manager, camera, browser, or any named software.
@@ -100,7 +101,7 @@ _SEED_MESSAGES = [
     {"role": "user",      "content": "open chrome and firefox"},
     {"role": "assistant", "content": "open chrome, open firefox"},
     {"role": "user",      "content": "open chrome and tell me about Elon Musk."},
-    {"role": "assistant", "content": "open chrome, general tell me about Elon Musk."},
+    {"role": "assistant", "content": "open chrome, realtime tell me about Elon Musk."},
     {"role": "user",      "content": "can you open chrome?"},
     {"role": "assistant", "content": "general can you open chrome?"},
     {"role": "user",      "content": "can you generate images?"},
