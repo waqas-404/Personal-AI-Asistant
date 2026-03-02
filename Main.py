@@ -33,13 +33,12 @@ Functions = ["open", "close", "play", "system", "content", "google search", "you
 
 def ShowDefaultChatIfNoChats():
     File = open(r"Data\ChatLog.json", "r", encoding='utf-8')
-    if len(File.read())<5:
+    if len(File.read()) < 5:
         with open(TempDirectoryPath('Database.data'), 'w', encoding='utf-8') as file:
             file.write('')
-        
         with open(TempDirectoryPath('Response.data'), 'w', encoding='utf-8') as file:
             file.write(DefaultMessage)
-    
+
 def ReadChatLogJson():
     with open(r'Data\ChatLog.json', 'r', encoding='utf-8') as file:
         chatlog_data = json.load(file)
@@ -53,10 +52,10 @@ def ChatLogIntegration():
             formatted_chatlog += f"User: {entry['content']}\n"
         elif entry["role"] == "assistant":
             formatted_chatlog += f"Assistant: {entry['content']}\n"
-            
+
     formatted_chatlog = formatted_chatlog.replace("User", Username + " ")
     formatted_chatlog = formatted_chatlog.replace("Assistant", Assistantname + " ")
-    
+
     with open(TempDirectoryPath('Database.data'), 'w', encoding='utf-8') as file:
         file.write(AnswerModifier(formatted_chatlog))
 
@@ -70,7 +69,7 @@ def ShowChatsOnGUI():
         File = open(TempDirectoryPath('Response.data'), 'w', encoding='utf-8')
         File.write(result)
         File.close()
-        
+
 def InitialExecution():
     SetMicrophoneStatus("False")
     ShowTextToScreen("")
@@ -78,59 +77,67 @@ def InitialExecution():
     ChatLogIntegration()
     ShowChatsOnGUI()
     StartReminderDaemon()
-    
+
 InitialExecution()
 
 def MainExecution():
     TaskExecution = False
     ImageExecution = False
     ImageGenerationQuery = ""
-    
+
     SetAssistantStatus("Listening...")
     Query = SpeechRecognition()
+
+    # ── GUARD: skip empty queries — prevents Cohere BadRequestError ───────────
+    if not Query or not Query.strip():
+        SetAssistantStatus("Available...")
+        return False
+
     ShowTextToScreen(f"{Username} : {Query}")
     SetAssistantStatus("Thinking...")
     Decision = FirstLayerDMM(Query)
-    
+
+    # ── GUARD: skip if model returned nothing usable ──────────────────────────
+    if not Decision:
+        SetAssistantStatus("Available...")
+        return False
+
     print("")
     print(f"Decision : {Decision}")
     print("")
-    
+
     G = any([i for i in Decision if i.startswith("general")])
     R = any([i for i in Decision if i.startswith("realtime")])
-    
+
     Mearged_Query = " and ".join(
         [
-            " ".join(i.split()[1:])   # ✅ take everything AFTER the label
+            " ".join(i.split()[1:])
             for i in Decision
             if i.startswith("general") or i.startswith("realtime")
         ]
     ).strip()
-    
+
     for queries in Decision:
         if queries.startswith("generate image"):
             ImageGenerationQuery = queries.replace("generate image", "").replace("of", "").strip()
             ImageExecution = True
-            
+
     for queries in Decision:
         if TaskExecution == False:
             if any(queries.startswith(func) for func in Functions):
                 run(Automation(list(Decision)))
                 TaskExecution = True
-                
+
     if ImageExecution == True:
-    # 1) write request (this already "saves" automatically)
         with open(r"Frontend\Files\ImageGeneration.data", "w", encoding="utf-8") as file:
             file.write(f"{ImageGenerationQuery},True")
-        
-        # Speak confirmation before starting image generation
+
         img_confirm = "Sure sir, I will let you know when the images are ready."
         ShowTextToScreen(f"{Assistantname} : {img_confirm}")
         SetAssistantStatus("Answering...")
         TextToSpeech(img_confirm)
         SetAssistantStatus("Available...")
-        
-        # Save to chatlog
+
         try:
             with open(r"Data\ChatLog.json", "r", encoding="utf-8") as f:
                 chatlog = json.load(f)
@@ -141,21 +148,19 @@ def MainExecution():
         except Exception as e:
             print(f"Error saving image gen to chatlog: {e}")
 
-        # 2) start ImageGeneration using SAME venv python + correct cwd
         try:
             project_root = os.path.dirname(os.path.abspath(__file__))
             script_path = os.path.join(project_root, "Backend", "ImageGeneration.py")
 
             p1 = subprocess.Popen(
-                [sys.executable, script_path],     # ✅ venv python
-                cwd=project_root,                  # ✅ correct relative paths
+                [sys.executable, script_path],
+                cwd=project_root,
                 shell=False
             )
             processes.append(p1)
-            
-            # 3) Start a thread to monitor when image generation completes
+
             def MonitorImageGeneration(process):
-                process.wait()  # Block until the subprocess finishes
+                process.wait()
                 done_msg = "Sir, the images are ready."
                 print(f"[bold green]{done_msg}[/bold green]")
                 try:
@@ -163,7 +168,6 @@ def MainExecution():
                     SetAssistantStatus("Answering...")
                     TextToSpeech(done_msg)
                     SetAssistantStatus("Available...")
-                    # Save completion to chatlog
                     with open(r"Data\ChatLog.json", "r", encoding="utf-8") as f:
                         chatlog = json.load(f)
                     chatlog.append({"role": "assistant", "content": done_msg})
@@ -171,13 +175,13 @@ def MainExecution():
                         json.dump(chatlog, f, indent=4, ensure_ascii=False)
                 except Exception as e:
                     print(f"Error notifying image completion: {e}")
-            
+
             monitor_thread = threading.Thread(target=MonitorImageGeneration, args=(p1,), daemon=True)
             monitor_thread.start()
 
         except Exception as e:
             print(f"Error starting ImageGeneration.py: {e}")
-            
+
     if G and R or R:
         SetAssistantStatus("Searching...")
         Answer = RealtimeSearchEngine(QueryModifier(Mearged_Query))
@@ -185,10 +189,10 @@ def MainExecution():
         SetAssistantStatus("Answering...")
         TextToSpeech(Answer)
         return True
-    
+
     else:
         for Queries in Decision:
-            
+
             if "general" in Queries:
                 SetAssistantStatus("Thinking...")
                 QueryFinal = Queries.replace("general ", "")
@@ -197,7 +201,7 @@ def MainExecution():
                 SetAssistantStatus("Answering...")
                 TextToSpeech(Answer)
                 return True
-            
+
             elif "realtime" in Queries:
                 SetAssistantStatus("Searching...")
                 QueryFinal = Queries.replace("realtime", "")
@@ -206,7 +210,7 @@ def MainExecution():
                 SetAssistantStatus("Answering...")
                 TextToSpeech(Answer)
                 return True
-            
+
             elif "exit" in Queries:
                 QueryFinal = "Okay, Bye!"
                 Answer = ChatBot(QueryModifier(QueryFinal))
@@ -215,27 +219,27 @@ def MainExecution():
                 TextToSpeech(Answer)
                 SetAssistantStatus("Answering...")
                 os._exit(1)
-                
-        
+
+
 def FirstThread():
-    
     while True:
-        
         CurrentStatus = GetMicrophoneStatus()
-        
+
         if CurrentStatus == "True":
             MainExecution()
         else:
             AIStatus = GetAssistantStatus()
-            
-            if "Available..."  in AIStatus:
+
+            if "Available..." in AIStatus:
                 sleep(0.1)
             else:
                 SetAssistantStatus("Available...")
-                
+
+
 def SecondThread():
     GraphicalUserInterface()
-    
+
+
 if __name__ == "__main__":
     thread2 = threading.Thread(target=FirstThread, daemon=True)
     thread2.start()
