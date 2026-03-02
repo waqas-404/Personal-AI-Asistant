@@ -30,6 +30,7 @@ You will decide whether a query is a 'general' query, a 'realtime' query, or is 
 -> Respond with 'realtime (query)' if a query requires up-to-date information.
    Examples: 'who is indian prime minister' -> 'realtime who is indian prime minister'
    'latest news about AI' -> 'realtime latest news about AI'
+   'what is the networth of elon musk?' -> 'realtime what is the networth of elon musk?'
 
 -> Respond with 'open (application or website name)' if a query is asking to open ANYTHING — 
    any app, website, system setting, file manager, camera, browser, or any named software.
@@ -81,18 +82,15 @@ You will decide whether a query is a 'general' query, a 'realtime' query, or is 
 _SEED_MESSAGES = [
     {"role": "user",      "content": "how are you?"},
     {"role": "assistant", "content": "general how are you?"},
-    {"role": "user",      "content": "open settings"},
-    {"role": "assistant", "content": "open settings"},
     {"role": "user",      "content": "open camera"},
     {"role": "assistant", "content": "open camera"},
-    {"role": "user",      "content": "open files"},
-    {"role": "assistant", "content": "open files"},
     {"role": "user",      "content": "open file manager"},
     {"role": "assistant", "content": "open file manager"},
     {"role": "user",      "content": "open control panel"},
     {"role": "assistant", "content": "open control panel"},
     {"role": "user",      "content": "open notepad"},
     {"role": "assistant", "content": "open notepad"},
+
     {"role": "user",      "content": "open instagram"},
     {"role": "assistant", "content": "open instagram"},
     {"role": "user",      "content": "open canva"},
@@ -101,6 +99,10 @@ _SEED_MESSAGES = [
     {"role": "assistant", "content": "open chrome, open firefox"},
     {"role": "user",      "content": "open chrome and tell me about Elon Musk."},
     {"role": "assistant", "content": "open chrome, general tell me about Elon Musk."},
+    {"role": "user",      "content": "open chrome and firefox"},
+    {"role": "assistant", "content": "open chrome, open firefox"},
+    {"role": "user",      "content": "open chrome and tell me about Elon Musk."},
+    {"role": "assistant", "content": "open chrome, realtime tell me about Elon Musk."},
     {"role": "user",      "content": "can you open chrome?"},
     {"role": "assistant", "content": "general can you open chrome?"},
     {"role": "user",      "content": "can you generate images?"},

@@ -40,8 +40,10 @@ _loop_thread.start()
 async def _generate_audio(text: str, file_path: str) -> None:
     # Unload the file from pygame before overwriting — prevents permission denied on Windows
     pygame.mixer.music.unload()
-    communicate = edge_tts.Communicate(text, AssistantVoice, pitch="+5Hz", rate="+13%")
+
+    communicate = edge_tts.Communicate(text, AssistantVoice, pitch="+1Hz", rate="+5%")
     await communicate.save(file_path)
+
 
 def _run_async(coro):
     """Submit a coroutine to the persistent event loop and block until done."""

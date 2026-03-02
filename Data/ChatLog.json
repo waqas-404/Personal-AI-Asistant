@@ -9,126 +9,6 @@
     },
     {
         "role": "user",
-        "content": "What is the time now?"
-    },
-    {
-        "role": "assistant",
-        "content": "12:04:19."
-    },
-    {
-        "role": "user",
-        "content": "How much is 1 usd to pkr?"
-    },
-    {
-        "role": "assistant",
-        "content": "1 USD is approximately 290 PKR."
-    },
-    {
-        "role": "user",
-        "content": "who are you"
-    },
-    {
-        "role": "assistant",
-        "content": "I am ORA, an AI agent assisting you."
-    },
-    {
-        "role": "user",
-        "content": "if i have to fine tone you, where should i provide my domain data so you can understand what i exactly want from you"
-    },
-    {
-        "role": "assistant",
-        "content": "You can provide your domain-specific data through text-based input, and I'll learn to understand your requirements and fine-tune my responses accordingly."
-    },
-    {
-        "role": "user",
-        "content": "Hello."
-    },
-    {
-        "role": "assistant",
-        "content": "Hello."
-    },
-    {
-        "role": "user",
-        "content": "Can you open instagram?"
-    },
-    {
-        "role": "assistant",
-        "content": "I'm a text-based AI, I don't have the capability to directly open external links or applications, including Instagram."
-    },
-    {
-        "role": "user",
-        "content": "can you generate images"
-    },
-    {
-        "role": "assistant",
-        "content": "Yes sir, I can generate images. What would you like me to generate an image of? Please provide a prompt."
-    },
-    {
-        "role": "user",
-        "content": "can you generate imagees"
-    },
-    {
-        "role": "assistant",
-        "content": "Yes sir, I can generate images. What would you like me to generate an image of? Please provide a prompt."
-    },
-    {
-        "role": "user",
-        "content": "can you open instagram"
-    },
-    {
-        "role": "assistant",
-        "content": "Yes sir, I can open Instagram. To do so, I'll need a proper prompt, such as a specific profile or hashtag you'd like to view. Please provide more details."
-    },
-    {
-        "role": "user",
-        "content": "Can you open instagram?"
-    },
-    {
-        "role": "assistant",
-        "content": "Yes sir, I can open Instagram. What would you like to do on Instagram, search for a profile, hashtag, or something else? Please provide a specific prompt."
-    },
-    {
-        "role": "user",
-        "content": "Vah kya."
-    },
-    {
-        "role": "assistant",
-        "content": "Yes sir, how can I assist you?"
-    },
-    {
-        "role": "user",
-        "content": "Delete."
-    },
-    {
-        "role": "assistant",
-        "content": "Understood sir."
-    },
-    {
-        "role": "user",
-        "content": "Jyada hi advance."
-    },
-    {
-        "role": "assistant",
-        "content": "Thank you sir."
-    },
-    {
-        "role": "user",
-        "content": "Wake up board set karo na."
-    },
-    {
-        "role": "assistant",
-        "content": "I don't have enough information, sir. What kind of board are you referring to?"
-    },
-    {
-        "role": "user",
-        "content": "Who are you?"
-    },
-    {
-        "role": "assistant",
-        "content": "I am ORA, an AI agent assisting you, sir."
-    },
-    {
-        "role": "user",
         "content": "Generate image of dinosaur"
     },
     {
@@ -208,107 +88,156 @@
         "content": "Eid ul Fitr is expected to be celebrated on Friday, March 20, 2026, or on Saturday, March 21, 2026, depending on the sighting of the moon of Shawwal, 1447, the 10th month of the Islamic Calendar."
     },
     {
+        "role": "assistant",
+        "content": "Sure sir, I've opened settings."
+    },
+    {
         "role": "user",
-        "content": "Set a reminder: 11:45 p.m. meeting"
+        "content": "Wake up."
     },
     {
         "role": "assistant",
-        "content": "Ok sir, your reminder set for 11:45 PM on February 20, 2026. I will remind you about the meeting."
+        "content": "Of course sir, I am always here at your service. What kind of task do you want me to do?"
     },
     {
         "role": "user",
-        "content": "Generate image of hulk."
+        "content": "Which team won today's cricket match?"
+    },
+    {
+        "role": "assistant",
+        "content": "According to the search results, sir, England won today's cricket match against Pakistan by 2 wickets in the T20 World Cup 2026 Super 8 Group 2 game at the Pallekele International Cricket Stadium, Kandy."
+    },
+    {
+        "role": "user",
+        "content": "Check if i have any reminders for today."
+    },
+    {
+        "role": "assistant",
+        "content": "Yes sir, you have a reminder for 11:06 PM on February 24, 2026, about a meeting."
+    },
+    {
+        "role": "user",
+        "content": "Remove all the."
+    },
+    {
+        "role": "assistant",
+        "content": "All reminders have been removed, sir."
+    },
+    {
+        "role": "user",
+        "content": "Can you generate images?"
+    },
+    {
+        "role": "assistant",
+        "content": "Yes sir, I can generate images. What would you like me to generate an image of? Please provide a specific prompt."
+    },
+    {
+        "role": "user",
+        "content": "open file explorer"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure sir, I've opened file explorer."
+    },
+    {
+        "role": "user",
+        "content": "close settings"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure sir, I've closed settings."
+    },
+    {
+        "role": "user",
+        "content": "close file explorer"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure sir, I've closed file explorer."
+    },
+    {
+        "role": "user",
+        "content": "open canva"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure sir, I've opened canva."
+    },
+    {
+        "role": "user",
+        "content": "Generate image of a dinosaur"
     },
     {
         "role": "assistant",
         "content": "Sure sir, I will let you know when the images are ready."
     },
     {
-        "role": "user",
-        "content": "Open."
-    },
-    {
-        "role": "assistant",
-        "content": "I don't have enough information, sir. What would you like me to open?"
-    },
-    {
-        "role": "user",
-        "content": "open hc."
-    },
-    {
-        "role": "assistant",
-        "content": "Sure sir, I've opened hc.."
-    },
-    {
-        "role": "user",
-        "content": "open atc."
-    },
-    {
-        "role": "assistant",
-        "content": "Sure sir, I've opened atc.."
-    },
-    {
         "role": "assistant",
         "content": "Sir, the images are ready."
     },
     {
+        "role": "user",
+        "content": "Check if i have any reminders for today."
+    },
+    {
         "role": "assistant",
-        "content": "Sir, you have a reminder for your meeting now"
+        "content": "You don't have any reminders for today, sir. All reminders were removed earlier."
     },
     {
         "role": "user",
-        "content": "What is the time now?"
+        "content": "Okay, bye."
     },
     {
         "role": "assistant",
-        "content": "The time is 23:45:50."
+        "content": "Goodbye sir."
     },
     {
         "role": "user",
-        "content": "Tell me a joke."
+        "content": "Wake up."
     },
     {
         "role": "assistant",
-        "content": "Why did the computer go to the doctor, sir? It had a virus."
+        "content": "Of course sir, I am always here at your service. What kind of task do you want me to do?"
     },
     {
         "role": "user",
-        "content": "Do you know about python?"
+        "content": "What is time?"
     },
     {
         "role": "assistant",
-        "content": "Yes sir, I'm familiar with Python. It's a high-level, interpreted programming language often used for web development, data analysis, and artificial intelligence. What would you like to know about Python, sir?"
+        "content": "It's 21:50:51, sir."
     },
     {
         "role": "user",
-        "content": "What is the role of pandas in python?"
+        "content": "Do you have any reminders for today?"
     },
     {
         "role": "assistant",
-        "content": "Pandas is a library in Python, sir, used for data manipulation and analysis. It provides data structures like Series and DataFrames to handle structured data, including tabular data such as spreadsheets and SQL tables. Pandas is often used for data cleaning, filtering, sorting, grouping, and merging data, making it a crucial tool for data analysis and science in Python."
+        "content": "No sir, you don't have any reminders for today."
     },
     {
         "role": "user",
-        "content": "How i can you know tell these feelings to her?"
+        "content": "100 days of machine learning."
     },
     {
         "role": "assistant",
-        "content": "I'm a simple AI agent, sir. To help you express your feelings, I would need more context about the situation and the person involved. Could you provide more details, such as what kind of feelings you want to express and what is the nature of your relationship with her?"
+        "content": "100 Days of Machine Learning is a challenge where you commit to learning and practicing machine learning for 100 days, sir."
     },
     {
         "role": "user",
-        "content": "I want to show my feelings to her?"
+        "content": "youtube search sunny"
     },
     {
         "role": "assistant",
-        "content": "To show your feelings to her, sir, you could try being honest and open about how you feel. Consider having a genuine conversation with her, expressing your emotions and thoughts in a respectful and sincere manner. You could also show your feelings through small gestures, like surprise gifts or thoughtful notes. What kind of feelings are you trying to express, sir?"
+        "content": "Sure sir, I've searched for sunny on YouTube."
     },
     {
         "role": "user",
-        "content": "Ramadan has started and i fast all the day and pray prayers 5 times a day."
+        "content": "100 days of ml."
     },
     {
         "role": "assistant",
+<<<<<<< HEAD
         "content": "Ramadan Mubarak, sir. May this blessed month bring you peace, prosperity, and spiritual growth. Fasting and praying five times a day can be challenging, but it's a great way to strengthen your faith and connect with Allah. Remember to stay hydrated, take care of your physical health, and make the most of this opportunity to seek forgiveness, guidance, and spiritual renewal. How's your experience been so far, sir?"
     },
     {
@@ -358,6 +287,65 @@
     {
         "role": "assistant",
         "content": "Of course sir, I am always here at your service. What kind of task do you want me to do?"
+=======
+        "content": "100 Days of ML is a challenge where you commit to learning and practicing machine learning for 100 days, sir."
+    },
+    {
+        "role": "user",
+        "content": "youtube search 100 days of ml"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure sir, I've searched for 100 days of ml on YouTube."
+    },
+    {
+        "role": "user",
+        "content": "What is the condition of iran america war?"
+    },
+    {
+        "role": "assistant",
+        "content": "The current condition of the Iran-America war is that the United States and Israel have launched a joint attack on various sites in Iran, sir. The operation, codenamed Roaring Lion by Israel and Operation Epic Fury by the United States Department of Defense, targeted key officials, military commanders, and facilities. Iran has retaliated with ballistic missiles and drones, hitting civilian population centers and military sites. The US has confirmed four service members killed in action, and the war is ongoing, sir."
+    },
+    {
+        "role": "user",
+        "content": "open whatsapp"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure sir, I've opened whatsapp."
+    },
+    {
+        "role": "user",
+        "content": "Messages on whatsapp."
+    },
+    {
+        "role": "assistant",
+        "content": "You have 5 unread messages on whatsapp, sir."
+    },
+    {
+        "role": "user",
+        "content": "What is the difference between?"
+    },
+    {
+        "role": "assistant",
+        "content": "I don't have enough information, sir. The difference between what? Please provide more context."
+    },
+    {
+        "role": "user",
+        "content": "Who are you?"
+    },
+    {
+        "role": "assistant",
+        "content": "I am ORA, an AI agent assisting you, sir."
+    },
+    {
+        "role": "user",
+        "content": "What is love?"
+    },
+    {
+        "role": "assistant",
+        "content": "Love is a strong feeling of affection, sir."
+>>>>>>> v2
     },
     {
         "role": "user",
@@ -369,11 +357,43 @@
     },
     {
         "role": "user",
+<<<<<<< HEAD
         "content": "How are you doing?"
     },
     {
         "role": "assistant",
         "content": "I'm functioning properly, sir. How can I assist you today?"
+=======
+        "content": "Who is president of pakistan?"
+    },
+    {
+        "role": "assistant",
+        "content": "The President of Pakistan is Asif Ali Zardari, sir. He is the 14th President of the Islamic Republic of Pakistan and was sworn in office on March 10, 2024."
+    },
+    {
+        "role": "user",
+        "content": "Who is kamal?"
+    },
+    {
+        "role": "assistant",
+        "content": "I don't have enough information, sir. There are many individuals with the name Kamal. Could you please provide more context or details about who Kamal is?"
+    },
+    {
+        "role": "user",
+        "content": "Hiora."
+    },
+    {
+        "role": "assistant",
+        "content": "Hello sir."
+    },
+    {
+        "role": "user",
+        "content": "google search what is time?"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure sir, I've searched for what is time? on Google."
+>>>>>>> v2
     },
     {
         "role": "user",
@@ -381,6 +401,7 @@
     },
     {
         "role": "assistant",
+<<<<<<< HEAD
         "content": "The time is 23:23:35, sir."
     },
     {
@@ -502,6 +523,33 @@
     {
         "role": "assistant",
         "content": "Sure sir, I've searched for afsane on YouTube."
+=======
+        "content": "Time is a measure of the duration between events, sir."
+    },
+    {
+        "role": "user",
+        "content": "What's the time now?"
+    },
+    {
+        "role": "assistant",
+        "content": "It's 22:30:22, sir."
+    },
+    {
+        "role": "user",
+        "content": "play 100 days of"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure sir, I've playing 100 days of."
+    },
+    {
+        "role": "user",
+        "content": "Which team has the most probability?"
+    },
+    {
+        "role": "assistant",
+        "content": "I don't have enough information, sir. Which teams are you referring to and in what context? Please provide more details."
+>>>>>>> v2
     },
     {
         "role": "user",
@@ -513,6 +561,7 @@
     },
     {
         "role": "user",
+<<<<<<< HEAD
         "content": "play afsana"
     },
     {
@@ -550,6 +599,13 @@
     {
         "role": "assistant",
         "content": "To open settings, sir, I would need more context or a specific prompt. What kind of settings would you like to open, and on which device or platform?"
+=======
+        "content": "What is the time?"
+    },
+    {
+        "role": "assistant",
+        "content": "It's 22:37:42, sir."
+>>>>>>> v2
     },
     {
         "role": "user",
@@ -561,6 +617,7 @@
     },
     {
         "role": "user",
+<<<<<<< HEAD
         "content": "Open canva."
     },
     {
@@ -590,6 +647,21 @@
     {
         "role": "assistant",
         "content": "To open Windows settings, sir, I can guide you through it. You can press the Windows key + I on your keyboard to open the Settings app. Alternatively, you can click on the Start menu and select the Settings icon. Would you like me to assist you with a specific setting or configuration?"
+=======
+        "content": "Hey."
+    },
+    {
+        "role": "assistant",
+        "content": "Hello sir."
+    },
+    {
+        "role": "user",
+        "content": "Tell me about yourself."
+    },
+    {
+        "role": "assistant",
+        "content": "I am ORA, an AI agent assisting you, sir. I can perform various tasks such as generating images, opening applications, and providing information."
+>>>>>>> v2
     },
     {
         "role": "user",
@@ -601,6 +673,7 @@
     },
     {
         "role": "user",
+<<<<<<< HEAD
         "content": "Tell me about kayde azam."
     },
     {
@@ -702,5 +775,36 @@
     {
         "role": "assistant",
         "content": "Sir, the images are ready."
+=======
+        "content": "Do you know anything about the iran america war?"
+    },
+    {
+        "role": "assistant",
+        "content": "The current condition of the Iran-America war is that the United States and Israel have launched a joint attack on various sites in Iran, sir. The operation has resulted in significant damage and loss of life. Iran has retaliated with ballistic missiles and drones, hitting civilian population centers and military sites. The situation is ongoing and fluid, sir."
+    },
+    {
+        "role": "user",
+        "content": "Can you generate images?"
+    },
+    {
+        "role": "assistant",
+        "content": "Yes sir, I can generate images. What would you like me to generate an image of? Please provide a specific prompt."
+    },
+    {
+        "role": "user",
+        "content": "Kya chal raha hai aajkal."
+    },
+    {
+        "role": "assistant",
+        "content": "Everything is going well, sir."
+    },
+    {
+        "role": "user",
+        "content": "Hey hora."
+    },
+    {
+        "role": "assistant",
+        "content": "Hello sir."
+>>>>>>> v2
     }
 ]
