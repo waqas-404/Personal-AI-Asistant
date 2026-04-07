@@ -22,6 +22,11 @@ ORA is a fully voice-driven, desktop AI assistant engineered for real-time reaso
 
 ---
 
+<img width="1344" height="765" alt="image" src="https://github.com/user-attachments/assets/3b897051-f0ee-4cea-a9b6-8cd76f6f71bb" />
+
+
+---
+
 ## Architecture
 
 ```
